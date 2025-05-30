@@ -1,0 +1,62 @@
+
+.notif-box {
+    padding: 1rem 1.25rem;
+    margin: 1rem auto;
+    max-width: 500px;
+    border-radius: 0.75rem;
+    font-size: 1rem;
+    font-weight: 500;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    animation: fadeSlideIn 0.4s ease-out;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  
+  .error-message {
+    background-color: #ffebee;
+    color: #c62828;
+    border-left: 4px solid #e53935;
+  }
+  
+ 
+  .success-message {
+    background-color: #e8f5e9;
+    color: #2e7d32;
+    border-left: 4px solid #43a047;
+  }
+  
+  .success-message a {
+    color: #1e88e5;
+    text-decoration: underline;
+    margin-left: 0.5rem;
+  }
+  
+  
+  @keyframes fadeSlideIn {
+    from {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  
+    .error-message {
+        background-color: #ffebee; 
+        color: #c62828;            
+        border: 1px solid #ef9a9a;
+        padding: 1rem;
+        border-radius: 0.75rem;
+        margin-top: 1rem;
+        font-weight: 500;
+        font-size: 0.95rem;
+        display: flex;
+        align-items: center;
+        gap: 0.75rem;
+        animation: fadeSlideIn 0.4s ease-out;
+        box-shadow: 0 4px 10px rgba(198, 40, 40, 0.1);
+      }

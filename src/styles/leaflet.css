@@ -1,0 +1,68 @@
+.leaflet-top, 
+.leaflet-bottom {
+  z-index: 900; 
+}
+
+.leaflet-control-container {
+  position: relative;
+  z-index: 900;
+}
+
+
+.leaflet-control-layers {
+  border-radius: 12px !important;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+  background-color: #ffffff;
+  padding: 10px 12px;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.leaflet-control-layers-base {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+}
+
+.leaflet-control-layers-base label {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 14px;
+  border-radius: 8px;
+  background-color: #f1f1f1;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  transition: background-color 0.2s, transform 0.1s, box-shadow 0.2s;
+  font-weight: 500;
+}
+
+.leaflet-control-layers-base label:hover {
+  background-color: #e3e3e3;
+  transform: translateY(-1px);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.leaflet-control-layers-base input[type="radio"] {
+  accent-color: #1a73e8;
+  cursor: pointer;
+}
+
+.leaflet-control-layers-base input[type="radio"]:checked + span {
+  color: #1a73e8;
+  font-weight: bold;
+}
+
+.leaflet-control-layers-base span {
+  font-size: 14px;
+}
+
+@media (max-width: 600px) {
+  .leaflet-control-layers-base {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+

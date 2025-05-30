@@ -1,0 +1,191 @@
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+  
+  @media (max-width: 768px) {
+    .main-header {
+      padding: 10px 0;
+      flex-wrap: wrap;
+    }
+    
+    .drawer-button {
+      display: block;
+      margin-right: 15px;
+    }
+    
+    .nav-container {
+      width: 100%;
+      order: 3;
+      margin-top: 10px;
+    }
+    
+    .nav-list {
+      flex-direction: column;
+      width: 100%;
+      padding: 10px 0;
+    }
+    
+    .nav-link {
+      width: 100%;
+      display: block;
+      padding: 12px 10px;
+    }
+    
+    .user-menu {
+      width: 100%;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 10px;
+      margin-top: 15px;
+    }
+    
+    .user-greeting-container {
+      margin-left: 0;
+      padding-left: 0;
+      border-left: none;
+      width: 100%;
+    }
+    
+    .user-greeting {
+      width: 100%;
+      text-align: center;
+    }
+    
+    .logout-button {
+      width: 100%;
+      text-align: center;
+      justify-content: center;
+    }
+    
+    
+    .stories-container {
+      grid-template-columns: 1fr;
+      gap: 20px;
+    }
+    
+    .story-item {
+      max-width: 100%;
+    }
+    
+    
+    .story-form,
+    .auth-form,
+    .about-content,
+    .detail-content {
+      padding: 20px 15px;
+    }
+    
+    
+    .story-image-container {
+      height: auto;
+      max-height: 220px;
+    }
+    
+   
+    .btn {
+      width: 100%;
+      justify-content: center;
+      margin-bottom: 10px;
+    }
+    
+  
+    .map {
+      height: 350px;
+    }
+    
+  
+    .camera-preview-container {
+      height: 250px;
+    }
+    
+    .camera-controls {
+      flex-direction: column;
+    }
+  }
+  
+  
+  @media (max-width: 480px) {
+    h1 {
+      font-size: 1.5rem;
+      margin-bottom: 20px;
+    }
+    
+    h2 {
+      font-size: 1.3rem;
+    }
+    
+    h3 {
+      font-size: 1.2rem;
+    }
+    
+   
+    .container {
+      padding: 0 10px;
+    }
+    
+    
+    .story-title {
+      font-size: 1.1rem;
+    }
+    
+    .story-content {
+      padding: 15px;
+    }
+    
+    .story-image-container {
+      height: 180px;
+    }
+    
+    
+    .detail-title {
+      font-size: 1.3rem;
+    }
+    
+    .detail-image-container {
+      margin-bottom: 20px;
+    }
+    
+    
+    .form-group {
+      margin-bottom: 15px;
+    }
+    
+    
+    .map {
+      height: 280px;
+    }
+    
+    .camera-preview-container {
+      height: 200px;
+    }
+  }
+  
+  /* Perbaikan untuk leaflet control layers di mobile */
+  @media (max-width: 600px) {
+    .leaflet-control-layers-base {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    
+    .leaflet-control-layers-base label {
+      margin-bottom: 5px;
+    }
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
